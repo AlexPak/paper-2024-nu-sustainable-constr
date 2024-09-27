@@ -26,9 +26,15 @@ This repository is organized into several Jupyter Notebooks that represent the d
 
 ## Dataset
 
-The dataset used in this study consists of 480 academic papers focused on the topics of "Circular Economy" and "Sustainability" in the construction sector. For privacy and access reasons, the dataset is not included in this repository. However, you can either:
-- **Access the dataset through relevant academic databases**, or
-- **Use the provided code to work with your own collection of academic literature**.
+The dataset used in this study consists of 381 academic papers focused on the topics of "Circular Economy" and "Sustainability" in the construction sector. 
+
+- **Data Files**:
+  - **CE_SC_papers.csv**: Contains original raw data (381 papers) with following features: author; title; abstract; article_text_string; article_text_list; number_of_symbols; number_of_words; number_of_sentences.
+  - **articles_for_term_extraction.csv**: Contains the filtered data of the 375 papers.
+  - **common_text_rank_terms.csv** and **common_tfidf_terms.csv**: Lists of common terms identified using TextRank and TF-IDF.
+  - **unique_CE_text_rank_terms.csv**, **unique_CE_tfidf_terms.csv**, **unique_SC_text_rank_terms.csv**, and **unique_SC_tfidf_terms.csv**: Lists of unique terms for Circular Economy (CE) and Sustainability in Construction (SC) derived from TextRank and TF-IDF analyses.
+  - **groups.txt**: Text file delineating the methodological grouping of the papers.
+  - **wikifier.pkl**: Pickled file containing data processed through Wikifier for enhanced term recognition and linking.
 
 ## Requirements
 
